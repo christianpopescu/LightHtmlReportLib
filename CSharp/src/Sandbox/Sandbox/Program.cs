@@ -27,7 +27,7 @@ namespace Sandbox
                         .Append("</p>")
                         .Append("<table>")
                         .Append("<tr>")
-                            .Append("<th>")
+                            .Append("<th style=\"color: blue; \">")
                             .Append("Column 1")
                             .Append("</th>")
                             .Append("<th>")
