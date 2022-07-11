@@ -10,7 +10,6 @@ namespace Sandbox
     {
         static void Main(string[] args)
         {
-            HtmlElement he;
             
             writeStringToFile("test.html", createSimpleHtmlDocumentV1());
 
@@ -64,7 +63,9 @@ namespace Sandbox
         {
             HtmlElement paragraph = new HtmlElement("p","This is a paragraph");
             HtmlElement header = new HtmlElement("h1", "This is a header");
-
+            List<IHtmlElement> listOfElements = new List<IHtmlElement>();
+            listOfElements.Add(header);
+            listOfElements.Add(paragraph);
             StringBuilder sb = new StringBuilder();
             sb.Append(@"<!DOCTYPE html>")
                 .Append("<Html>")
@@ -75,8 +76,8 @@ namespace Sandbox
                         .Append("</style>")
                     .Append("</head>")
                     .Append("<body>")
-                        .Append(header.AsText())
-                        .Append(paragraph.AsText())
+                        .Append(listOfElements[0].AsText())
+                        .Append(listOfElements[1].AsText())
                         .Append("<table>")
                         .Append("<tr>")
                             .Append("<th style=\"color: blue; border: 1px solid black; \">")
