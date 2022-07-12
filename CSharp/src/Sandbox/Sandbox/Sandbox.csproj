@@ -59,12 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HtmlElement.cs" />
+    <Compile Include="IHtmlCollection.cs" />
     <Compile Include="IHtmlElement.cs" />
+    <Compile Include="IHtmlObject.cs" />
+    <Compile Include="IHtmlWithTag.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="SandboxDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

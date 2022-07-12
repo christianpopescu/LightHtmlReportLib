@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-public interface IHtmlElement
+public interface IHtmlElement : IHtmlWithTag
 {
-	 String TagName { get; set; }
 	 String Content { get; set; }
-	 String AsText();
-	 List<IHtmlElement> children { get; set; }
+	 
 }
